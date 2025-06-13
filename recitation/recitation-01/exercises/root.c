@@ -16,5 +16,8 @@ int main(int argc, char *argv[]) {
     printf("Dependency 1: %d\n", sumres(arr1, arr2, m));
     printf("Dependency 2: %d\n", pdtres(arr1, arr2, m));
 
+    free(arr1);
+    free(arr2);
+
     return 0;
 }
