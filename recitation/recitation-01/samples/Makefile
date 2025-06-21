@@ -6,7 +6,7 @@ p1: p1.o
 
 # p1.o depends on file p1.c. Make checks if the file was recently updated, if so, the recipe is run
 p1.o: p1.c
-	gcc -o $@ p1.o p1.c
+	gcc -o p1.o p1.c
 ###########################
 
 ###########################
