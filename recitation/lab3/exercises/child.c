@@ -22,5 +22,6 @@ int main(int argc, char *argv[]) {
 
     printf("Message from server: %s\n", message);
     // You need to close the pipe properly
+    close(read_fd);
     return 0;
 }
