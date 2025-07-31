@@ -24,7 +24,7 @@ int main(int argc, char *argv[]) {
         perror("ERROR: Failure setting SIGINT\n");
     }
     // block sigint
-    if(sigprocmask(SIGINT, &set, NULL) == -1) { // block SIGTSTP
+    if(sigprocmask(SIGINT, &set, NULL) == -1) {
         perror("ERROR: Failure to block signal\n");
         return -1;
     }
